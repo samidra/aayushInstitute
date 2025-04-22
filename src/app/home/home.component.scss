@@ -5,17 +5,17 @@ $background-color_1: rgb(226, 222, 222);
     .carousel {
         width: 100%;
         overflow: hidden;
-        height: 100vh;
+        // height: 100vh;
         background-color: $background-color_1;
         box-shadow: 0px 1px 6px rgba(112, 0, 0, 0.1);
     }
 
     .carousel-item {
-        height: 90vh;
+        // height: 90vh;
 
-        img {
-            height: 90vh;
-        }
+        // img {
+        //     height: 90vh;
+        // }
     }
 
     .carousel-item {
