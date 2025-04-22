@@ -1,0 +1,93 @@
+$background-color_1: rgb(226, 222, 222);
+
+.main_banner {
+
+    .carousel {
+        width: 100%;
+        overflow: hidden;
+        height: 100vh;
+        background-color: $background-color_1;
+        box-shadow: 0px 1px 6px rgba(112, 0, 0, 0.1);
+    }
+
+    .carousel-item {
+        height: 90vh;
+
+        img {
+            height: 90vh;
+        }
+    }
+
+    .carousel-item {
+        width: 100%;
+
+        .carousel-caption {
+            position: absolute;
+            display: flex;
+            top: 33%;
+            left: 2em;
+            justify-content: center;
+            flex-direction: column;
+            width: 50%;
+
+            h2 {
+                font-weight: 600;
+                font-size: 1.8em;
+                letter-spacing: 0em;
+                line-height: 40px;
+                text-align: left;
+                color: whitesmoke;
+                text-shadow: 30px #262626;
+            }
+
+            .underline{
+                width: 69%;
+                margin: 10px 0;
+                margin-bottom: 20px;
+                border-bottom: 4px solid #d1c304;
+            }
+            
+            p {
+                
+                width: 90%;
+                font-weight: 400;
+                font-style: italic;
+                font-size: 1.3em;
+                line-height: 1.3em;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #ffff;
+            }
+        }
+
+    }
+
+    .carousel-indicators {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+
+        li {
+            height: 3px;
+            width: 30px;
+            margin-left: 3px;
+            margin-bottom: 5px;
+            border-radius: 0;
+            border: none;
+            background-color: #D9D9D9 !important;
+        }
+
+        .active {
+
+            background-color: #0e889e !important;
+        }
+    }
+
+    .glyphicon {
+        font-family: 'Glyphicons Halflings' !important;
+    }
+
+}

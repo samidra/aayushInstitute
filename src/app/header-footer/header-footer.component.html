@@ -1,0 +1,96 @@
+<nav class="navbar navbar-expand-lg" [ngClass]="{'fixed': isScrolled}">
+    <div class="contact_nav">
+        <a href="tel:+916294063840">Call Us: +916294063840</a>
+        <button>Login/Register</button>
+    </div>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="assets/aayush logo.png" alt="" srcset="">
+        </a>
+
+        <i class="bi bi-list smallmenuicon" (click)="toggleNav()"></i>
+        <ul class="navbar-nav big_menu">
+            <li>
+                <a (click)="route_to_page('home')">Home</a>
+            </li>
+            <li>
+                <a (click)="route_to_page('about-us')">Course</a>
+            </li>
+
+            <li>
+                <a (click)="route_to_page('career')">Target Course</a>
+            </li>
+            <li>
+                <a (click)="route_to_page('career')">Scholarship</a>
+            </li>
+            <li>
+                <a (click)="route_to_page('career')">Blog</a>
+            </li>
+            <li>
+                <a (click)="route_to_page('career')">Student LMS</a>
+            </li>
+        </ul>
+    </div>
+
+    @if(show_small_menu){
+    <ul class="navbar-nav small_menu">
+        <li>
+            <a (click)="route_to_page('home')">Home</a>
+        </li>
+        <li>
+            <a (click)="route_to_page('about-us')">Course</a>
+        </li>
+
+        <li>
+            <a (click)="route_to_page('career')">Target Course</a>
+        </li>
+        <li>
+            <a (click)="route_to_page('career')">Scholarship</a>
+        </li>
+        <li>
+            <a (click)="route_to_page('career')">Blog</a>
+        </li>
+        <li>
+            <a (click)="route_to_page('career')">Student LMS</a>
+        </li>
+    </ul>
+    }
+
+</nav>
+
+<router-outlet />
+
+<div class="container-fluid footcont">
+    <div class="row" >
+        <div class="col-12 upperFooter" style="display: flex; justify-content: center;">
+            <div class="row upperFooterRow">
+                <div class="col-2 upperFooter_col"><a href="">About Us</a></div>
+                <div class="col-2 upperFooter_col"><a href="">Contact Us</a></div>
+                <div class="col-2 upperFooter_col"><a href="">Terms & Conditions</a></div>
+                <div class="col-2 upperFooter_col"><a href="">Policy</a></div>
+                <div class="col-2 upperFooter_col"><a href="">Mission & Vision</a></div>
+                <div class="col-2 upperFooter_col"><a href="">FAQs</a></div>
+            </div>
+        </div>
+       <div class="col-md-1"></div>
+        <div class="col-md-2 col-6 footLink">
+            <a href="">Leadership Team</a>
+            <a href="">Campus & Facilities</a>
+            <a href="">Alumni Network</a>
+        </div>
+        <div class="col-md-3 col-6 footLink">
+            <a href="">Top Courses And Programers</a>
+        </div>
+        <div class="col-md-3 col-6 footLink">
+            <a href="">Top Recruiters In India </a>
+            <a href="">Top Recruiters In Abroad</a>
+            <a href=""> Partnerships & MOU </a>
+        </div>
+        <div class="col-md-2 col-6 footLink">
+            <a href="">Admissions</a>
+            <a href="">Login</a>
+            <a href="">Results</a>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 main_banner">
+            <div id="carouselExample" class="carousel slide  carousel-fade" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" *ngFor="let image of images; let i = index" data-bs-target="#carouselExample"
+                        [attr.data-bs-slide-to]="i" [class.active]="i === 0"
+                        [attr.aria-current]="i === 0 ? 'true' : null" [attr.aria-label]="'Slide' + (i + 1)"></button>
+                </div>
+
+
+                <div class="carousel-inner">
+                    <div class="carousel-item" data-bs-interval="2000" *ngFor="let image of images; let i = index"
+                        [class.active]="i === 0">
+                        <img [src]="image.path" style="width: 100%;" loading="lazy" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
