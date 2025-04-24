@@ -1,5 +1,11 @@
 $background-color_1: rgb(226, 222, 222);
 
+* {
+    // margin: 0;
+    padding: 0;
+    // box-sizing: border-box;
+}
+
 .main_banner {
 
     .carousel {
@@ -8,14 +14,6 @@ $background-color_1: rgb(226, 222, 222);
         // height: 100vh;
         background-color: $background-color_1;
         box-shadow: 0px 1px 6px rgba(112, 0, 0, 0.1);
-    }
-
-    .carousel-item {
-        // height: 90vh;
-
-        // img {
-        //     height: 90vh;
-        // }
     }
 
     .carousel-item {
@@ -40,15 +38,15 @@ $background-color_1: rgb(226, 222, 222);
                 text-shadow: 30px #262626;
             }
 
-            .underline{
+            .underline {
                 width: 69%;
                 margin: 10px 0;
                 margin-bottom: 20px;
                 border-bottom: 4px solid #d1c304;
             }
-            
+
             p {
-                
+
                 width: 90%;
                 font-weight: 400;
                 font-style: italic;
@@ -90,4 +88,163 @@ $background-color_1: rgb(226, 222, 222);
         font-family: 'Glyphicons Halflings' !important;
     }
 
+}
+
+.mainHeader {
+    background: url("../../assets/hero-right.png") no-repeat right top;
+    background-size: contain;
+    height: 55vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    span {
+        color: #4a24a3;
+        font-size: 1em;
+        font-weight: 700;
+
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 1.2em;
+        width: 40%;
+        text-align: justify;
+    }
+
+    button {
+        padding: 7px 10px;
+        border-radius: 5px;
+    }
+
+    .start {
+        border: none;
+        margin-right: 5px;
+        border: none;
+        background-color: #4a24a3;
+        color: white;
+
+        &:hover {
+            border: 1px solid #4a24a3;
+            background-color: transparent;
+            color: rgb(0, 0, 0);
+        }
+    }
+
+    .more {
+        border: 1px solid #4a24a3;
+        color: rgb(0, 0, 0);
+
+        &:hover {
+            background-color: #4a24a3;
+            color: white;
+            border: none;
+        }
+    }
+}
+
+.sec2 {
+
+    div {
+        width: 50%;
+
+        h3 {
+            font-weight: 700;
+            font-size: 3em;
+        }
+
+        p {
+            font-size: 1.1em;
+            font-weight: 500;
+            text-align: justify;
+        }
+
+        ul {
+            padding-left: 40px;
+            li {
+                list-style: circle;
+                font-size: 1em;
+                font-weight: 600;
+                line-height: 26px;
+                text-align: justify;
+            }
+        }
+    }
+
+    background: url("../../assets/history-left.png") no-repeat left top;
+    background-size: contain;
+    height: 75vh;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+
+}
+
+.ourCourses {
+
+    display: flex;
+    justify-content: space-evenly;
+
+    .ourCoursesCol {
+        margin-top: 20px;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        position: relative;
+
+        h3 {
+            font-weight: 700;
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: 0.9em;
+            text-align: justify;
+            margin-bottom: 50px;
+        }
+
+        div {
+            margin-bottom: 20px;
+            width: 100%;
+            position: absolute;
+            bottom: 0px;
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            padding: 3px 7px;
+            border-radius: 5px;
+
+        }
+
+        .start {
+            border: none;
+            margin-right: 5px;
+            border: none;
+            background-color: #4a24a3;
+            color: white;
+
+            &:hover {
+                border: 1px solid #4a24a3;
+                background-color: transparent;
+                color: rgb(0, 0, 0);
+            }
+        }
+
+    }
 }
