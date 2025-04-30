@@ -11,15 +11,15 @@ $secondary: #6c757d;
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
-@font-face {
-    font-family: 'Aptos';
-    src: url('https://path-to-aptos-font.woff2') format('woff2'),
-        url('https://path-to-aptos-font.woff') format('woff'),
-        url('https://path-to-aptos-font.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'Aptos';
+//     src: url('https://path-to-aptos-font.woff2') format('woff2'),
+//         url('https://path-to-aptos-font.woff') format('woff'),
+//         url('https://path-to-aptos-font.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
 body {
   background-color: #f8f9fa;
-  font-family: 'Aptos';
+  font-family: "Poppins", sans-serif;
 }

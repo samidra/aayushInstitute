@@ -37,7 +37,7 @@
 
     .contact_nav {
         width: 100%;
-        background: linear-gradient(105deg, #4a24a3 50%, rgba(255, 255, 255, 1) 56%);
+        background: #2c3192;
         padding: 0.7em 2em;
         display: flex;
         align-items: center;
@@ -53,12 +53,16 @@
 
         .socialMedia {
             a{
-                color: #4a24a3 !important;
+                color: #ffffff !important;
+                i{
+                    font-size: 1.2em !important;
+                }
+
             }
         }
     }
 
-    .container-fluid {
+    .container {
         padding: 0.8em 2em;
 
         .navbar-brand {
@@ -73,23 +77,22 @@
             flex-direction: row;
             justify-content: center !important;
             align-items: center;
-            width: 90%;
+            width: 100%;
             position: relative;
 
             // padding-left: 7vmax;
             li {
-                padding-left: 4em;
+                padding-left: 1em;
                 top: 0;
 
                 a {
-                    font-size: 0.9em;
-                    font-weight: 500;
-                    color: #4a24a3;
+                    font-size: 1.08em;
+                    font-weight: 400;
+                    color: #2c3192;
                     cursor: pointer;
 
                     &:hover {
-                        font-weight: 600;
-                        color: #003b88;
+                        font-weight: 500;
                     } 
                 }
             }
@@ -98,11 +101,12 @@
                 position: absolute ;
                 right: 0;
                 top: -5px;
-                background-color: #4a24a3;
+                background-color: #2c3192;
                 color: white !important ;
                 text-decoration: none !important ;
-                padding: 7px; 
-                border-radius: 5px; 
+                padding: 10px; 
+                border-radius: 3px; 
+                font-size: 1em !important;
             }
         }
     }
@@ -140,10 +144,13 @@
 
 @media screen and (max-width: 1112px) {
     .navbar {
-        .container-fluid {
+        .container {
 
             ul {
-                width: 90%;
+                width: 87%;
+                .letsTalk{
+                    right:auto;
+                }
             }
         }
     }
@@ -172,6 +179,10 @@
                         cursor: pointer;
                     }
                 }
+
+                .letsTalk{
+                    right:auto;
+                }
             }
         }
     }
@@ -182,7 +193,7 @@
 
     .upperFooter {
 
-        background-color: #4a24a3;
+        background-color: #2c3192;
 
         .upperFooterRow {
             padding: 10px 2px;
@@ -214,7 +225,7 @@
             font-size: 1em;
             font-weight: 600;
             line-height: 2em;
-            color: #4a24a3;
+            color: #2c3192;
         }
     }
 }
@@ -242,7 +253,7 @@
                 font-size: 1em;
                 font-weight: 600;
                 line-height: 2em;
-                color: #4a24a3;
+                color: #2c3192;
             }
         }
     }
@@ -302,7 +313,7 @@
                 cursor: pointer;
 
                 &:hover {
-                    color: #003b88;
+                    color: #2c3192;
                 }
             }
 
