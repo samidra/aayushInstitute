@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg" [ngClass]="{'fixed': isScrolled}">
-    <div class="contact_nav">
+    <div class="contact_nav all_sec_common">
         <div>
             <a href="">info&#64;aayushinstitute.com</a>
             <a href="tel:+916294063840">Call Us: +916294063840</a>
@@ -11,7 +11,7 @@
              <a href=""><i class="bi bi-twitter-x"></i> </a> 
         </div>  
     </div>
-    <div class="container">
+    <div class="container-fluid all_sec_common">
         <a class="navbar-brand" href="#">
             <img src="assets/aayush logo.jpg" alt="" srcset="">
         </a>
@@ -72,37 +72,126 @@
 
 <router-outlet />
 
-<div class="container-fluid footcont">
-    <div class="row" >
-        <div class="col-12 upperFooter" style="display: flex; justify-content: center;">
-            <div class="row upperFooterRow">
-                <div class="col-md-2 col-4 mt-2 upperFooter_col"><a href="">About Us</a></div>
-                <div class="col-md-2 col-4 mt-2 upperFooter_col"><a href="">Contact Us</a></div>
-                <div class="col-md-2 col-4 mt-2 upperFooter_col"><a href="">Terms & Conditions</a></div>
-                <div class="col-md-2 col-4 mt-2 upperFooter_col"><a href="">Policy</a></div>
-                <div class="col-md-2 col-4 mt-2 upperFooter_col"><a href="">Mission & Vision</a></div>
-                <div class="col-md-2 col-4 mt-2 upperFooter_col"><a href="">FAQs</a></div>
-            </div>
-        </div>
-       <div class="col-md-1"></div>
-        <div class="col-md-2 col-6 footLink">
-            <a href="">Leadership Team</a>
-            <a href="">Campus & Facilities</a>
-            <a href="">Alumni Network</a>
-        </div>
-        <div class="col-md-3 col-6 footLink">
-            <a href="">Top Courses And Programers</a>
-        </div>
-        <div class="col-md-3 col-6 footLink">
-            <a href="">Top Recruiters In India </a>
-            <a href="">Top Recruiters In Abroad</a>
-            <a href=""> Partnerships & MOU </a>
-        </div>
-        <div class="col-md-2 col-6 footLink">
-            <a href="">Admissions</a>
-            <a href="">Login</a>
-            <a href="">Results</a>
-        </div>
-        <div class="col-md-1"></div>
+<div class="container-fluid footer_scss footcont all_sec_common" >
+  <div class="row">
+    <div class="col-lg-4 mt-3 logo_img">
+      <img src="assets/aayush logo.jpg" class="log_img" alt="" srcset="">
+      <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quos facilis quaerat aliquid nisi obcaecati culpa tempore mollitia est animi. </h5>
+      
     </div>
+
+
+    <div class="col-lg-2 col-6 mt-3 px-lg-4">
+        <div class="cateG">
+          <ul>
+            <li class="categoryfoot">
+              <span class="categoryfoot1">Our Courses</span>
+            </li>
+  
+            <li>
+              <a (click)="route_to_page('digital-engineering')">Web Dev</a>
+            </li>
+            <li>
+                <a (click)="route_to_page('digital-engineering')">Web Dev</a>
+              </li>
+              <li>
+                <a (click)="route_to_page('digital-engineering')">Web Dev</a>
+              </li>
+              <li>
+                <a (click)="route_to_page('digital-engineering')">Web Dev</a>
+              </li>
+              <li>
+                <a (click)="route_to_page('digital-engineering')">Web Dev</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+
+    <div class="col-lg-2 col-6 mt-3 ">
+      <div class="cateG">
+        <ul>
+          <li class="categoryfoot">
+            <span class="categoryfoot1"> Quick Links</span>
+          </li>
+          <li>
+            <a>Home</a>
+          </li>
+          <li>
+            <a (click)="route_to_page('about-us')">About Us</a>
+          </li>
+          <li>
+            <a (click)="route_to_page('career')">Blogs</a>
+          </li>
+          <li>
+            <a (click)="route_to_page('career')">Careers</a>
+          </li>
+          <li>
+            <a (click)="route_to_page('contact')">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-lg-2 col-6 mt-3 ">
+        <div class="cateG">
+          <ul>
+            <li class="categoryfoot">
+              <span class="categoryfoot1"> Quick Links</span>
+            </li>
+
+            <li>
+                <a (click)="route_to_page('career')">
+                  Admissions</a>
+              </li>
+
+            <li>
+              <a (click)="route_to_page('career')">
+                Terms & Conditions</a>
+            </li>
+            <li>
+              <a (click)="route_to_page('contact')">Policy</a>
+            </li>
+            <li>
+                <a (click)="route_to_page('contact')">Mission & Vision</a>
+              </li>
+              <li>
+                <a (click)="route_to_page('contact')">FAQs</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+
+    <div class="col-lg-2 col-sm-6 mt-3">
+
+      <div class="addressfoot">
+
+        <p class="contactfoot">Contact Details</p>
+
+        <p class="addressfoot1">
+          <span><i class="bi bi-geo-fill" style="color: rgb(44, 43, 43);"></i></span>
+          Delhi
+        </p>
+
+        <p class="addressfoot1 mt-2">
+          <span><i class="bi bi-envelope-fill" style="color: rgb(44, 43, 43);"></i></span>
+          <a href="mailto:aayushinstitute.com">{{'aayushinstitute.com'}}
+          </a>
+        </p>
+      </div>
+
+      <div class="all_icon mt-3">
+        <h5>Follow Us</h5>
+      </div>
+      <div class="all_icon mt-2">
+
+        <a><i class="bi bi-facebook"></i></a>
+        <a><i class="bi bi-instagram"></i></a>
+        <a><i class="bi bi-twitter-x"></i></a>
+
+      </div>
+    </div>
+    <div class="col-12 mt-5 copy_right">
+      <span>COPYRIGHT &copy;  2021 All rights reserved.</span>
+    </div>
+  </div>
 </div>
