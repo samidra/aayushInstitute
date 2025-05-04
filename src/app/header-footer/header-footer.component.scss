@@ -110,6 +110,11 @@
                 padding: 10px; 
                 border-radius: 3px; 
                 font-size: 1em !important;
+
+                &:hover{
+                    font-weight: 400;
+                    box-shadow: 0px 0px 2px 2px rgb(0 0 0 / 58%);
+                }
             }
         }
     }
@@ -195,7 +200,29 @@
 // Footer
 
 .footcont {
-    background: #2c3192;
+    background: #150461;
+
+    .news{
+        display: flex;
+        justify-content: space-between;
+
+        h3{
+            color: white;
+        }
+        input{
+            height: 40px !important;
+            width: 290px;
+        }
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            height: 39px;
+            width: 40px;
+            background-color: #ffffff;
+        }
+    }
 
     .log_img{
         height: 100px;
@@ -222,17 +249,17 @@
 
         .categoryfoot1 {
             font-size: 1.1em;
-            font-weight: 600;
+            font-weight: 700;
             line-height: 30px;
             letter-spacing: 0em;
             text-align: left;
             list-style: none;
-            color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
         }
 
         a {
             font-size: 1em;
-            font-weight: 400;
+            font-weight: 500;
             letter-spacing: 0em;
             line-height: 2.3em;
             text-align: left;
@@ -241,8 +268,8 @@
         }
 
         ul li a:hover {
-
-            color: black;
+            text-decoration: underline;
+            color: rgb(248, 211, 143);
             font-weight: 600;
             cursor: pointer;
         }
@@ -301,7 +328,7 @@
         letter-spacing: 0em;
         text-align: left;
         list-style: none;
-        color: #000000;
+        color: #ffffff;
     }
 
 }
@@ -319,7 +346,7 @@
         line-height: 30px;
         letter-spacing: 0em;
         text-align: left;
-        color: #000000;
+        color: #ffffff;
     }
 
     a {
@@ -342,10 +369,10 @@
 }
 
 .copy_right {
-
+    margin-top: 30px;
     padding: 18px;
     border-top: 1px solid #ffffff1c;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 5px;
     font-weight: 600;
     line-height: 18.54px;

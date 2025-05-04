@@ -7,7 +7,7 @@
             <p>It is a long established fact that a reader will be distracted by the readable content of a page when
                 looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
                 distribution.</p>
-            <div>
+            <div class="d-flex">
                 <button class="start">Get Start</button>
                 <button class="more">Learn More</button>
             </div>
@@ -24,85 +24,198 @@
         </div>
         <div class="col-lg-6 div">
             <h3>Perfect Solution Makes a <br> Success History</h3>
-                <p>Distracted by the readable content of a page when looking at its layout. The point of using Lorem
-                    Ipsum is that it has a more- normal distribution.</p>
-                <ul>
-                    <li><i class="bi bi-check-lg"></i> Distracted by the readable content of a page</li>
-                    <li><i class="bi bi-check-lg"></i> Ipsum is that it has a more- normal distribution</li>
-                    <li><i class="bi bi-check-lg"></i> content of a page when looking at</li>
-                    <li><i class="bi bi-check-lg"></i> The point of using Lorem Ipsum is that it has</li>
-                </ul>
+            <p>Distracted by the readable content of a page when looking at its layout. The point of using Lorem
+                Ipsum is that it has a more- normal distribution.</p>
+            <ul>
+                <li><i class="bi bi-check-lg"></i> Distracted by the readable content of a page</li>
+                <li><i class="bi bi-check-lg"></i> Ipsum is that it has a more- normal distribution</li>
+                <li><i class="bi bi-check-lg"></i> content of a page when looking at</li>
+                <li><i class="bi bi-check-lg"></i> The point of using Lorem Ipsum is that it has</li>
+            </ul>
         </div>
     </div>
 
-    <div class="row ourCourses all_sec_common" style="background-color: #f5f4f4;">
-        <div class="col-lg-4  col-md-5 ourCoursesCol">
-            <img src="assets/aayush logo.png" alt="" height="140px" width="140px">
-            <h3>Course Name</h3>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                distribution.</p>
-            <div>
-                <button class="start">Read More</button>
-            </div>
-        </div>
-        <div class="col-lg-4  col-md-5 ourCoursesCol">
-            <img src="assets/aayush logo.png" alt="" height="140px" width="140px">
-            <h3>Course Name</h3>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                distribution.</p>
-            <div>
-                <button class="start">Read More</button>
-            </div>
-        </div>
-        <div class="col-lg-4  col-md-5 ourCoursesCol">
-            <img src="assets/aayush logo.png" alt="" height="140px" width="140px">
-            <h3>Course Name</h3>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                distribution.</p>
-            <div>
-                <button class="start">Read More</button>
-            </div>
-        </div>
-    </div>     
+    <div class=" ourCourses all_sec_common" style="background-color: #f1eef8;">
 
-    <div class="row ourCourses all_sec_common" style="background-color: #f5f4f4;">
-        <div class="col-lg-4  col-md-5 ourCoursesCol">
-            <img src="assets/aayush logo.png" alt="" height="140px" width="140px">
-            <h3>Course Name</h3>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                distribution.</p>
-            <div>
-                <button class="start">Read More</button>
-            </div>
+        <div
+            style="display: flex; justify-content: center; flex-direction: column; align-items: center;padding: 1em 0px;">
+            <h3 style="text-align: center; font-size: 3em; font-weight: 600;">
+                Courses We Offer
+            </h3>
+            <div style="border-bottom: 5px solid #150461; width: 100px; margin-top: 10px;"></div>
         </div>
-        <div class="col-lg-4  col-md-5 ourCoursesCol">
-            <img src="assets/aayush logo.png" alt="" height="140px" width="140px">
-            <h3>Course Name</h3>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                distribution.</p>
-            <div>
-                <button class="start">Read More</button>
+
+        <div class="row show_hide" [ngClass]="{'open': isOrderDetailsOpen('item1')}">
+
+            <div class="col-lg-4  col-md-5 ourCoursesCol">
+                <img src="assets/aayush logo.png" alt="" height="140px" width="140px">
+                <h3>Course Name</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution.</p>
+                <div>
+                    <button class="start">Read More</button>
+                </div>
             </div>
-        </div>
-        <div class="col-lg-4  col-md-5 ourCoursesCol">
-            <img src="assets/aayush logo.png" alt="" height="140px" width="140px">
-            <h3>Course Name</h3>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                distribution.</p>
-            <div>
-                <button class="start">Read More</button>
+            <div class="col-lg-4  col-md-5 ourCoursesCol">
+                <img src="assets/aayush logo.png" alt="" height="140px" width="140px">
+                <h3>Course Name</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution.</p>
+                <div>
+                    <button class="start">Read More</button>
+                </div>
             </div>
+            <div class="col-lg-4  col-md-5 ourCoursesCol">
+                <img src="assets/aayush logo.png" alt="" height="140px" width="140px">
+                <h3>Course Name</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution.</p>
+                <div>
+                    <button class="start">Read More</button>
+                </div>
+            </div>
+            <div class="col-lg-4  col-md-5 ourCoursesCol">
+                <img src="assets/aayush logo.png" alt="" height="140px" width="140px">
+                <h3>Course Name</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution.</p>
+                <div>
+                    <button class="start">Read More</button>
+                </div>
+            </div>
+            <div class="col-lg-4  col-md-5 ourCoursesCol">
+                <img src="assets/aayush logo.png" alt="" height="140px" width="140px">
+                <h3>Course Name</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution.</p>
+                <div>
+                    <button class="start">Read More</button>
+                </div>
+            </div>
+            <div class="col-lg-4  col-md-5 ourCoursesCol">
+                <img src="assets/aayush logo.png" alt="" height="140px" width="140px">
+                <h3>Course Name</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution.</p>
+                <div>
+                    <button class="start">Read More</button>
+                </div>
+            </div>
+
         </div>
-    </div>     
+
+        <div class="col-12 LoadMore">
+            <button class="LoadMore-btn" (click)="toggleOrderDetails('item1')">
+                <span [ngClass]="more">Load More <i class="bi bi-chevron-down"></i> </span>
+                <span [ngClass]="less">Show Less <i class="bi bi-chevron-up"></i> </span>
+            </button>
+        </div>
+
+    </div>
+
+    <div class="row popularCourses all_sec_common">
+
+        <div
+            style="display: flex; justify-content: center; flex-direction: column; align-items: center;padding: 1em 0px;">
+            <h3 style="text-align: center; font-size: 3em; font-weight: 600;">
+                Popular Courses
+            </h3>
+            <div style="border-bottom: 5px solid #150461; width: 100px; margin-top: 10px;"></div>
+        </div>
 
 
-    <div class="row">
+        <div class="col-lg-4  col-md-5 ourCoursesCol">
+            <img src="assets/course_1popular.jpg" alt="" height="240px" width="100%">
+            <h3>Course Name</h3>
+            <p>It is a long established fact that a reader </p>
+            <button class="start">Read More</button>
+        </div>
+
+        <div class="col-lg-4  col-md-5 ourCoursesCol">
+            <img src="assets/course_2popular.jpg" alt="" height="240px" width="100%">
+            <h3>Course Name</h3>
+            <p>It is a long established fact that a reader </p>
+            <button class="start">Read More</button>
+        </div>
+
+        <div class="col-lg-4  col-md-5 ourCoursesCol">
+            <img src="assets/course_3popular.jpg" alt="" height="240px" width="100%">
+            <h3>Course Name</h3>
+            <p>It is a long established fact that a reader </p>
+            <button class="start">Read More</button>
+        </div>
+
+    </div>
+  
+    <div class="row part4">
+
+        <div class="col-lg-6 quality_product_div2">
+
+            <h4>Register now and get a discount 50% discount until 1 January </h4>
+            <div class="myunderline"></div>
+
+            <p>
+                In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin
+                quis mi malesuada, finibus tortor fermentum. Aliquam, augue a gravida rutrum, ante nisl fermentum nulla,
+                vitae tempo.
+            </p>
+
+            <button class="contact_us">
+                Register now
+            </button>
+
+        </div>
+  
+        <div class="col-lg-6 formside ">
+            <form [formGroup]="enquiry_form" (ngSubmit)="onSubmit()">
+                <div class="row formside">
+                    <div class="col-12 colheading_part1">
+                        <h4>Search for your course</h4>
+                    </div>
+
+                    <div class="input_field col-12">
+                        <label for="course_name">Course Name</label>
+                        <input id="course_name" type="text" formControlName="course_name" placeholder="Course Name" />
+                        <div *ngIf="course_name?.invalid && course_name?.touched" class="error">
+                            <small *ngIf="course_name?.errors?.['required']">Course Name is required.</small>
+                            <small *ngIf="course_name?.errors?.['course_name']">Enter a Course Name.</small>
+                        </div>
+                    </div>
+
+                    <div class="input_field col-12">
+                        <label for="category">Category</label>
+                        <input id="category" type="text" formControlName="category" placeholder="Category" />
+                        <div *ngIf="category?.invalid && category?.touched" class="error">
+                            <small *ngIf="category?.errors?.['required']">Category is required.</small>
+                            <small *ngIf="category?.errors?.['pattern']">Enter a valid Category.</small>
+                        </div>
+                    </div>  
+
+                    <div class="col-12 input_field">
+                        <label for="message_to">Degree</label>
+                        <input type="text" formControlName="message" id="message_to"
+                        placeholder="Degree">
+                        <div *ngIf="message?.invalid && message.touched" class="error">
+                            <small *ngIf="message?.errors?.['required']">
+                                Degree is required
+                            </small>
+                        </div>
+                    </div>
+
+                    <button type="submit">Submit</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+ 
+    <div class="row mb-3">
         <div class="col-12 main_banner">
             <div id="carouselExample" class="carousel slide  carousel-fade" data-bs-ride="carousel">
 
@@ -123,6 +236,5 @@
             </div>
         </div>
     </div>
-    
+
 </div>
-  
