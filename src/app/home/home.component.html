@@ -1,163 +1,85 @@
 <div class="container-fluid">
 
-    <div class="row mainHeaderrow all_sec_common">
-        <div class="col-lg-6">
-            <span>Best Agency </span>
-            <h3>Perfect Consulting <span>&</span> <br> Solutions</h3>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                distribution.</p>
-            <div class="d-flex">
-                <button class="start">Get Start</button>
-                <button class="more">Learn More</button>
+    <div class="mainHeaderWrapper">
+        <video autoplay id="bg-video" preload="metadata">
+            <source src="assets/bg-video.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+        </video>
+
+        <div class="row mainHeaderrow">
+            <div class="col-lg-12">
+                <div class="content">
+                    <h1>Welcome to Angular!</h1>
+                    <p>Background video example with SCSS styling.</p>
+
+                    <div class="d-flex">
+                        <button class="start">Get Start</button>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="col-lg-6 img">
-            <img src="assets/hero-right.png" alt="" srcset="">
-        </div>
-    </div>
-
-    <div class="row sec2 all_sec_common">
-
-        <div class="col-lg-6 img">
-            <img src="assets/history-left.png" alt="" width="100%">
-        </div>
-        <div class="col-lg-6 div">
-            <h3>Perfect Solution Makes a <br> Success History</h3>
-            <p>Distracted by the readable content of a page when looking at its layout. The point of using Lorem
-                Ipsum is that it has a more- normal distribution.</p>
-            <ul>
-                <li><i class="bi bi-check-lg"></i> Distracted by the readable content of a page</li>
-                <li><i class="bi bi-check-lg"></i> Ipsum is that it has a more- normal distribution</li>
-                <li><i class="bi bi-check-lg"></i> content of a page when looking at</li>
-                <li><i class="bi bi-check-lg"></i> The point of using Lorem Ipsum is that it has</li>
-            </ul>
         </div>
     </div>
+ 
+    <div class=" ourCourses all_sec_common">
 
-    <div class=" ourCourses all_sec_common" style="background-color: #f1eef8;">
-
-        <div
-            style="display: flex; justify-content: center; flex-direction: column; align-items: center;padding: 1em 0px;">
-            <h3 style="text-align: center; font-size: 3em; font-weight: 600;">
-                Courses We Offer
-            </h3>
-            <div style="border-bottom: 5px solid #150461; width: 100px; margin-top: 10px;"></div>
+        <div class="col-lg-3  col-md-5 ourCoursesCol">
+            <i class="bi bi-globe-central-south-asia"></i>
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt totam enim consectetur laudantium
+                doloribus impedit.. </p>
         </div>
-
-        <div class="row show_hide" [ngClass]="{'open': isOrderDetailsOpen('item1')}">
-
-            <div class="col-lg-4  col-md-5 ourCoursesCol">
-                <img src="assets/aayush logo.png" alt="" height="140px" width="140px">
-                <h3>Course Name</h3>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution.</p>
-                <div>
-                    <button class="start">Read More</button>
-                </div>
-            </div>
-            <div class="col-lg-4  col-md-5 ourCoursesCol">
-                <img src="assets/aayush logo.png" alt="" height="140px" width="140px">
-                <h3>Course Name</h3>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution.</p>
-                <div>
-                    <button class="start">Read More</button>
-                </div>
-            </div>
-            <div class="col-lg-4  col-md-5 ourCoursesCol">
-                <img src="assets/aayush logo.png" alt="" height="140px" width="140px">
-                <h3>Course Name</h3>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution.</p>
-                <div>
-                    <button class="start">Read More</button>
-                </div>
-            </div>
-            <div class="col-lg-4  col-md-5 ourCoursesCol">
-                <img src="assets/aayush logo.png" alt="" height="140px" width="140px">
-                <h3>Course Name</h3>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution.</p>
-                <div>
-                    <button class="start">Read More</button>
-                </div>
-            </div>
-            <div class="col-lg-4  col-md-5 ourCoursesCol">
-                <img src="assets/aayush logo.png" alt="" height="140px" width="140px">
-                <h3>Course Name</h3>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution.</p>
-                <div>
-                    <button class="start">Read More</button>
-                </div>
-            </div>
-            <div class="col-lg-4  col-md-5 ourCoursesCol">
-                <img src="assets/aayush logo.png" alt="" height="140px" width="140px">
-                <h3>Course Name</h3>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution.</p>
-                <div>
-                    <button class="start">Read More</button>
-                </div>
-            </div>
-
+        <div class="col-lg-3  col-md-5 ourCoursesCol">
+            <i class="bi bi-pencil-fill"></i>
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt totam enim consectetur laudantium
+                doloribus impedit.. </p>
         </div>
-
-        <div class="col-12 LoadMore">
-            <button class="LoadMore-btn" (click)="toggleOrderDetails('item1')">
-                <span [ngClass]="more">Load More <i class="bi bi-chevron-down"></i> </span>
-                <span [ngClass]="less">Show Less <i class="bi bi-chevron-up"></i> </span>
-            </button>
+        <div class="col-lg-3  col-md-5 ourCoursesCol">
+            <i class="bi bi-pentagon-fill"></i>
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt totam enim consectetur laudantium
+                doloribus impedit.. </p>
+        </div>
+        <div class="col-lg-3  col-md-5 ourCoursesCol">
+            <i class="bi bi-folder2-open"></i>
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt totam enim consectetur laudantium
+                doloribus impedit.. </p>
         </div>
 
     </div>
 
     <div class="row popularCourses all_sec_common">
-
-        <div
-            style="display: flex; justify-content: center; flex-direction: column; align-items: center;padding: 1em 0px;">
+        <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;padding: 1em 0px;">
             <h3 style="text-align: center; font-size: 3em; font-weight: 600;">
                 Popular Courses
             </h3>
             <div style="border-bottom: 5px solid #150461; width: 100px; margin-top: 10px;"></div>
         </div>
 
+        <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="popularslideConfig"
+            (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+            (beforeChange)= "beforeChange($event)">
 
-        <div class="col-lg-4  col-md-5 ourCoursesCol">
-            <img src="assets/course_1popular.jpg" alt="" height="240px" width="100%">
-            <h3>Course Name</h3>
-            <p>It is a long established fact that a reader </p>
-            <button class="start">Read More</button>
-        </div>
+            <div ngxSlickItem *ngFor="let slide of slides" class="" class="col-lg-3 slide  ourCoursesCol">
+                <img src="{{slide.img}}" alt="" height="180px" width="100%">
+                <h3>{{slide.heading}}</h3>
+                <p>{{slide.para}}</p>
+                <div class="btmdiv">       
+                    <img src="assets/students.jpg" alt="">
+                    <h4>Name, <span>Author</span></h4>
+                    <button class="start">$500</button>
+                </div>
+            </div> 
 
-        <div class="col-lg-4  col-md-5 ourCoursesCol">
-            <img src="assets/course_2popular.jpg" alt="" height="240px" width="100%">
-            <h3>Course Name</h3>
-            <p>It is a long established fact that a reader </p>
-            <button class="start">Read More</button>
-        </div>
-
-        <div class="col-lg-4  col-md-5 ourCoursesCol">
-            <img src="assets/course_3popular.jpg" alt="" height="240px" width="100%">
-            <h3>Course Name</h3>
-            <p>It is a long established fact that a reader </p>
-            <button class="start">Read More</button>
-        </div>
-
+        </ngx-slick-carousel>
     </div>
-  
+
     <div class="row part4">
 
         <div class="col-lg-6 quality_product_div2">
 
-            <h4>Register now and get a discount 50% discount until 1 January </h4>
+            <h4 class="p-1">Register now and get a discount 50% discount until 1 January </h4>
             <div class="myunderline"></div>
 
             <p>
@@ -171,7 +93,7 @@
             </button>
 
         </div>
-  
+
         <div class="col-lg-6 formside ">
             <form [formGroup]="enquiry_form" (ngSubmit)="onSubmit()">
                 <div class="row formside">
@@ -195,12 +117,11 @@
                             <small *ngIf="category?.errors?.['required']">Category is required.</small>
                             <small *ngIf="category?.errors?.['pattern']">Enter a valid Category.</small>
                         </div>
-                    </div>  
+                    </div>
 
                     <div class="col-12 input_field">
                         <label for="message_to">Degree</label>
-                        <input type="text" formControlName="message" id="message_to"
-                        placeholder="Degree">
+                        <input type="text" formControlName="message" id="message_to" placeholder="Degree">
                         <div *ngIf="message?.invalid && message.touched" class="error">
                             <small *ngIf="message?.errors?.['required']">
                                 Degree is required
@@ -213,28 +134,29 @@
                 </div>
             </form>
         </div>
-    </div>
+    </div>  
  
-    <div class="row mb-3">
-        <div class="col-12 main_banner">
-            <div id="carouselExample" class="carousel slide  carousel-fade" data-bs-ride="carousel">
-
-                <div class="carousel-indicators">
-                    <button type="button" *ngFor="let image of images; let i = index" data-bs-target="#carouselExample"
-                        [attr.data-bs-slide-to]="i" [class.active]="i === 0"
-                        [attr.aria-current]="i === 0 ? 'true' : null" [attr.aria-label]="'Slide' + (i + 1)"></button>
-                </div>
-
-
-                <div class="carousel-inner">
-                    <div class="carousel-item" data-bs-interval="2000" *ngFor="let image of images; let i = index"
-                        [class.active]="i === 0">
-                        <img [src]="image.path" style="width: 100%;" loading="lazy" />
-                    </div>
-                </div>
-
-            </div>
+    <div class="row msg_from_students all_sec_common"> 
+        <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;padding: 1em 0px;">
+            <h3 style="text-align: center; font-size: 3em; font-weight: 600; color: white;">
+                What our students say
+            </h3>
+            <div style="border-bottom: 5px solid #fbff00; width: 100px; margin-top: 10px;"></div>
         </div>
+
+        <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="studentsslideConfig"
+            (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+            (beforeChange)= "beforeChange($event)">
+
+            <div ngxSlickItem *ngFor="let slide of slides" class="" class="  slide  ourCoursesCol">
+                <p>{{slide.para}}</p>
+                <img src="assets/students.jpg" alt="">
+                <h3>{{slide.heading}}</h3>
+                <span>Graduate</span>
+            </div>
+
+        </ngx-slick-carousel>
     </div>
 
 </div>
+

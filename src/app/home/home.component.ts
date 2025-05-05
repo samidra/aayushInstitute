@@ -3,49 +3,26 @@ import { Component } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
    
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+
 @Component({ 
   selector: 'app-home',
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule,SlickCarouselModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
 
-  images = [
 
-    {
-      path: 'assets/16687123188.jpg',
-    },
-    {
-      path: 'assets/166868591120.jpg',   
-    },
-    {
-      path: 'assets/166868706633.jpg',
-    },
-    
-  ];
+  // ngAfterViewInit(): void {
+  //   const video = document.getElementById('bg-video') as HTMLVideoElement;
+  //   if (video) {
+  //     video.play().catch(err => {
+  //       console.warn('Autoplay prevented:', err);
+  //     });
+  //   }
+  // }
   
-  more:any= 'more';
-  less:any= 'less';
-  selectedOrderIndex: string  | null = null;
-
-  toggleOrderDetails(item: string): void {
-    if (this.selectedOrderIndex === item) {
-      this.selectedOrderIndex = null; // Hide the details if already selected
-      
-      this.less= 'less';
-      this.more= 'more';
-
-    } else {
-      this.selectedOrderIndex = item; // Show the details of the clicked order
-      this.more= 'less';
-      this.less= 'more';
-    }
-  }
-
-  isOrderDetailsOpen(item: string): boolean {
-    return this.selectedOrderIndex === item;
-  }
  
   enquiry_form: any
   constructor(private fb: FormBuilder) {
@@ -83,5 +60,87 @@ export class HomeComponent {
     }
   }
 
+  slides = [
+    { img: "assets/students.jpg",
+      heading:"Heading",
+      para:"It is a long established fact that a reader, It is a long established fact that a reader. "
+    },
+    { img: "assets/students.jpg",
+      heading:"Heading",
+      para:"It is a long established fact that a reader, It is a long established fact that a reader. "
+    },
+    { img: "assets/students.jpg",
+      heading:"Heading",
+      para:"It is a long established fact that a reader, It is a long established fact that a reader. "
+    },
+    { img: "assets/students.jpg",
+      heading:"Heading",
+      para:"It is a long established fact that a reader, It is a long established fact that a reader. "
+    },
+    { img: "assets/students.jpg",
+      heading:"Heading",
+      para:"It is a long established fact that a reader, It is a long established fact that a reader. "
+    },
+    { img: "assets/students.jpg",
+      heading:"Heading",
+      para:"It is a long established fact that a reader, It is a long established fact that a reader. "
+    },
+    { img: "assets/students.jpg",
+      heading:"Heading",
+      para:"It is a long established fact that a reader, It is a long established fact that a reader. "
+    },
+    { img: "assets/students.jpg",
+      heading:"Heading",
+      para:"It is a long established fact that a reader, It is a long established fact that a reader. "
+    }
+  ];
+  popularslideConfig = {
+    "slidesToShow": 4, 
+    "slidesToScroll": 1, 
+    "infinite": true,
+    "autoplay": true,
+    "autoplaySpeed": 1000,
+    'responsive': [
+      {
+        'breakpoint': 807,
+        'settings': {
+          'slidesToShow': 1
+        }
+      }
+    ]
+  };
+  
+  studentsslideConfig = {
+    "slidesToShow": 1, 
+    "slidesToScroll": 1, 
+    "infinite": true,
+    "autoplay": true,
+    "autoplaySpeed": 1000,
+    'responsive': [
+      {
+        'breakpoint': 807,
+        'settings': {
+          'slidesToShow': 1
+        }
+      }
+    ]
+  };
+  
+  slickInit(e:any) {
+    console.log('slick initialized');
+  }
+  
+  breakpoint(e:any) {
+    console.log('breakpoint');
+  }
+  
+  afterChange(e:any) {
+    console.log('afterChange');
+  }
+  
+  beforeChange(e:any) {
+    console.log('beforeChange');
+  }
+  
 
 }
