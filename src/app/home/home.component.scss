@@ -18,10 +18,12 @@ $background-color_1: rgb(226, 222, 222);
     width: 40px;
     z-index: 1;
     position: absolute;
+    margin-top: 20px !important;
 }
 
 ::ng-deep .slick-next {
     right: 10px !important;
+    
 }
 
 ::ng-deep .slick-prev {
@@ -179,7 +181,6 @@ $background-color_1: rgb(226, 222, 222);
 
     display: flex;
     justify-content: space-evenly;
-    // padding-top: 2em;
 
     .ourCoursesCol {
         margin: 5px;
@@ -191,15 +192,14 @@ $background-color_1: rgb(226, 222, 222);
         position: relative;
 
         h3 {
-            margin-top: 20px 0;
+            margin-top: 20px;
             font-weight: 600;
             font-size: 1.2em;
             text-align: center;
         }
-       
-
+    
         p {
-            width: 97%;
+            width: 90%;
             font-size: 1em;
             text-align: center;
             color: #262626;
@@ -251,10 +251,12 @@ $background-color_1: rgb(226, 222, 222);
 
 .msg_from_students {
     background-image: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.623)),url("../../assets/students.jpg");
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 50px 0;
     .ourCoursesCol {
         
         margin: 10px;

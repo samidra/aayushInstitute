@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
    
@@ -13,16 +13,16 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 })
 export class HomeComponent {
 
-
-  // ngAfterViewInit(): void {
-  //   const video = document.getElementById('bg-video') as HTMLVideoElement;
-  //   if (video) {
-  //     video.play().catch(err => {
-  //       console.warn('Autoplay prevented:', err);
-  //     });
-  //   }
-  // }
-  
+  @ViewChild('bgVideo') bgVideoRef!: ElementRef<HTMLVideoElement>;
+  ngAfterViewInit(): void {
+    const video = this.bgVideoRef.nativeElement;
+    video.muted = true;
+    video.autoplay = true;
+    video.load(); // reloads the video if needed
+    video.play().catch(error => {
+      console.warn('Autoplay failed:', error);
+    });
+  }   
  
   enquiry_form: any
   constructor(private fb: FormBuilder) {
