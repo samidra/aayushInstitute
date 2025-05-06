@@ -13,16 +13,18 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 })
 export class HomeComponent {
 
-  @ViewChild('bgVideo') bgVideoRef!: ElementRef<HTMLVideoElement>;
-  ngAfterViewInit(): void {
-    const video = this.bgVideoRef.nativeElement;
-    video.muted = true;
-    video.autoplay = true;
-    video.load(); // reloads the video if needed
-    video.play().catch(error => {
-      console.warn('Autoplay failed:', error);
-    });
-  }   
+  // @ViewChild('bg_video') bg_video!: ElementRef<HTMLVideoElement>;
+
+  // ngAfterViewInit(): void {
+  //   const video = this.bg_video.nativeElement;
+  //   video.muted = true; // Essential for autoplay
+  //   video.play().then(() => {
+  //     console.log('Video playing instantly!');
+  //   }).catch(error => {
+  //     console.error('Video failed to play:', error);
+  //   });
+  // }
+
  
   enquiry_form: any
   constructor(private fb: FormBuilder) {
@@ -126,21 +128,9 @@ export class HomeComponent {
     ]
   };
   
-  slickInit(e:any) {
-    console.log('slick initialized');
-  }
-  
-  breakpoint(e:any) {
-    console.log('breakpoint');
-  }
-  
-  afterChange(e:any) {
-    console.log('afterChange');
-  }
-  
-  beforeChange(e:any) {
-    console.log('beforeChange');
-  }
-  
+  slickInit(e:any) {}
+  breakpoint(e:any) {}
+  afterChange(e:any) {}
+  beforeChange(e:any) {}
 
 }

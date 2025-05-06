@@ -18,12 +18,17 @@ $background-color_1: rgb(226, 222, 222);
     width: 40px;
     z-index: 1;
     position: absolute;
-    margin-top: 20px !important;
+    // margin-top: 20px !important;
 }
 
 ::ng-deep .slick-next {
     right: 10px !important;
-    
+
+}
+
+::ng-deep .slick-list {
+    height: 85vh !important;
+    width: 100% !important;
 }
 
 ::ng-deep .slick-prev {
@@ -46,8 +51,9 @@ $background-color_1: rgb(226, 222, 222);
     height: 70vh;
     overflow: hidden;
 
-    #bg-video {
+    #bg_video {
         position: absolute;
+        display: block !important;
         top: 0;
         left: 0;
         width: 100vw;
@@ -120,28 +126,43 @@ $background-color_1: rgb(226, 222, 222);
         align-items: flex-start;
         position: relative;
         padding: 10px;
-        box-shadow: 0px 0px 2px 2px rgba(63, 63, 63, 0.58);
+        padding-top: 0 !important;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         transition: bottom 0.9s ease;
 
-        i {
-            font-size: 3em;
-            position: relative;
-            z-index: 2;
-            color: #2c3192;
-        }
+        .div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
 
-        h3 {
-            font-weight: 700;
-            font-size: 1.2em;
-            text-align: center;
-            position: relative;
-            z-index: 2;
-            color: #2c3192;
+            i {
+
+                font-size: 2.1em;
+                position: relative;
+                z-index: 2;
+                color: #2c3192;
+                line-height: 0;
+            }
+
+            h3 {
+                margin-left: 10px;
+                font-weight: 700;
+                font-size: 1.2em;
+                text-align: center;
+                position: relative;
+                z-index: 2;
+                color: #2c3192;
+            }
+
         }
 
         p {
-            margin-top: 10px;
+            margin-top: 5px;
             font-size: 0.9em;
+            letter-spacing: 0.05em;
+            hyphens: auto;
+            line-height: 1.6;
             text-align: justify;
             position: relative;
             z-index: 2;
@@ -185,11 +206,12 @@ $background-color_1: rgb(226, 222, 222);
     .ourCoursesCol {
         margin: 5px;
         margin-top: 60px;
-        background-color: rgb(218, 230, 253);
+        background-color: rgb(237 243 255 / 89%);
         display: flex;
         flex-direction: column;
         align-items: center;
         position: relative;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
         h3 {
             margin-top: 20px;
@@ -197,7 +219,7 @@ $background-color_1: rgb(226, 222, 222);
             font-size: 1.2em;
             text-align: center;
         }
-    
+
         p {
             width: 90%;
             font-size: 1em;
@@ -207,24 +229,26 @@ $background-color_1: rgb(226, 222, 222);
             margin: 20px 0px;
         }
 
-        .btmdiv{
+        .btmdiv {
             display: flex;
             justify-content: space-between;
             align-items: center;
             background-color: rgb(186, 208, 248);
             width: 100%;
             padding: 0;
-            img{
+
+            img {
                 padding: 5px;
                 height: 50px;
                 width: 50px;
                 border-radius: 50%;
             }
 
-            h4{
+            h4 {
                 padding: 5px;
                 font-size: 1em;
-                span{
+
+                span {
                     font-size: 0.9em;
                     color: #5c5a5a;
                 }
@@ -239,7 +263,7 @@ $background-color_1: rgb(226, 222, 222);
                 margin: 0;
             }
         }
-        
+
     }
 }
 
@@ -250,15 +274,16 @@ $background-color_1: rgb(226, 222, 222);
 }
 
 .msg_from_students {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.623)),url("../../assets/students.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.623)), url("../../assets/students.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 50px 0;
+
     .ourCoursesCol {
-        
+
         margin: 10px;
         display: flex;
         flex-direction: column;
@@ -266,7 +291,7 @@ $background-color_1: rgb(226, 222, 222);
         padding: 10px;
         position: relative;
 
-        img{
+        img {
             height: 100px;
             width: 100px;
             border-radius: 50%;
@@ -519,4 +544,4 @@ $background-color_1: rgb(226, 222, 222);
             }
         }
     }
-}       
+}

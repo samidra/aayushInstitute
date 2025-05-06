@@ -1,10 +1,10 @@
 <div class="container-fluid">
 
     <div class="mainHeaderWrapper">
-        <video #bgVideo id="bg-video" preload="metadata" muted loop>
+        <video #bg_video autoplay muted loop playsinline preload="auto" id="bg_video">
             <source src="assets/bg-video.mp4" type="video/mp4" />
             Your browser does not support HTML5 video.
-          </video>
+        </video>
 
         <div class="row mainHeaderrow">
             <div class="col-lg-12">
@@ -19,30 +19,38 @@
             </div>
         </div>
     </div>
- 
+
     <div class=" ourCourses all_sec_common">
 
         <div class="col-lg-3  col-md-5 ourCoursesCol">
-            <i class="bi bi-globe-central-south-asia"></i>
-            <h3>Heading</h3>
+            <div class="div">
+                <i class="bi bi-globe-central-south-asia"></i>
+                <h3>Heading</h3>
+            </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt totam enim consectetur laudantium
                 doloribus impedit.. </p>
         </div>
         <div class="col-lg-3  col-md-5 ourCoursesCol">
-            <i class="bi bi-pencil-fill"></i>
-            <h3>Heading</h3>
+            <div class="div">
+                <i class="bi bi-pencil-fill"></i>
+                <h3>Heading</h3>
+            </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt totam enim consectetur laudantium
                 doloribus impedit.. </p>
         </div>
         <div class="col-lg-3  col-md-5 ourCoursesCol">
-            <i class="bi bi-pentagon-fill"></i>
-            <h3>Heading</h3>
+            <div class="div">
+                <i class="bi bi-pentagon-fill"></i>
+                <h3>Heading</h3>
+            </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt totam enim consectetur laudantium
                 doloribus impedit.. </p>
         </div>
         <div class="col-lg-3  col-md-5 ourCoursesCol">
-            <i class="bi bi-folder2-open"></i>
-            <h3>Heading</h3>
+            <div class="div">
+                <i class="bi bi-folder2-open"></i>
+                <h3>Heading</h3>
+            </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt totam enim consectetur laudantium
                 doloribus impedit.. </p>
         </div>
@@ -50,7 +58,8 @@
     </div>
 
     <div class="row popularCourses all_sec_common">
-        <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;padding: 1em 0px;">
+        <div
+            style="display: flex; justify-content: center; flex-direction: column; align-items: center;padding: 1em 0px;">
             <h3 style="text-align: center; font-size: 3em; font-weight: 600;">
                 Popular Courses
             </h3>
@@ -59,18 +68,18 @@
 
         <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="popularslideConfig"
             (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
-            (beforeChange)= "beforeChange($event)">
+            (beforeChange)="beforeChange($event)">
 
-            <div ngxSlickItem *ngFor="let slide of slides" class="" class="col-lg-3 slide  ourCoursesCol">
+            <div ngxSlickItem *ngFor="let slide of slides" class="col-lg-3 slide  ourCoursesCol">
                 <img src="{{slide.img}}" alt="" height="180px" width="100%">
                 <h3>{{slide.heading}}</h3>
                 <p>{{slide.para}}</p>
-                <div class="btmdiv">       
+                <div class="btmdiv">
                     <img src="assets/students.jpg" alt="">
                     <h4>Name, <span>Author</span></h4>
                     <button class="start">$500</button>
                 </div>
-            </div> 
+            </div>
 
         </ngx-slick-carousel>
     </div>
@@ -134,10 +143,11 @@
                 </div>
             </form>
         </div>
-    </div>  
- 
-    <div class="row msg_from_students all_sec_common"> 
-        <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;padding: 1em 0px;">
+    </div>
+
+    <div class="row msg_from_students all_sec_common">
+        <div
+            style="display: flex; justify-content: center; flex-direction: column; align-items: center;padding: 1em 0px;">
             <h3 style="text-align: center; font-size: 3em; font-weight: 600; color: white;">
                 What our students say
             </h3>
@@ -146,7 +156,7 @@
 
         <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="studentsslideConfig"
             (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
-            (beforeChange)= "beforeChange($event)">
+            (beforeChange)="beforeChange($event)">
 
             <div ngxSlickItem *ngFor="let slide of slides" class="" class="  slide  ourCoursesCol">
                 <p>{{slide.para}}</p>
@@ -158,6 +168,4 @@
         </ngx-slick-carousel>
     </div>
 
-</div>
-
- 
+</div>  
