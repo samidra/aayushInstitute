@@ -97,7 +97,7 @@ export class HomeComponent {
     }
   ];
   popularslideConfig = {
-    "slidesToShow": 4, 
+    "slidesToShow": 3, 
     "slidesToScroll": 1, 
     "infinite": true,
     "autoplay": true,

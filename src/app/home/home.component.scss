@@ -18,7 +18,7 @@ $background-color_1: rgb(226, 222, 222);
     width: 40px;
     z-index: 1;
     position: absolute;
-    // margin-top: 20px !important;
+    margin-top: -20px !important;
 }
 
 ::ng-deep .slick-next {
@@ -48,7 +48,7 @@ $background-color_1: rgb(226, 222, 222);
 
 .mainHeaderWrapper {
     position: relative;
-    height: 70vh;
+    height: 80vh;
     overflow: hidden;
 
     #bg_video {
@@ -118,15 +118,14 @@ $background-color_1: rgb(226, 222, 222);
 
     .ourCoursesCol {
         width: 23%;
-        margin-top: 20px;
+        margin-top: 8px;
         background-color: white;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         position: relative;
-        padding: 10px;
-        padding-top: 0 !important;
+        padding: 20px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         transition: bottom 0.9s ease;
 
@@ -136,7 +135,7 @@ $background-color_1: rgb(226, 222, 222);
             align-items: center;
             margin-top: 10px;
 
-            i {
+           i  {
 
                 font-size: 2.1em;
                 position: relative;
@@ -319,6 +318,43 @@ $background-color_1: rgb(226, 222, 222);
             color: #ffffff;
             font-weight: 400;
             margin-bottom: 20px;
+        }
+    }
+}
+
+.services_we_offer{
+    background-color: #e7e8fa;
+    display: flex;
+    justify-content: space-evenly;
+    .service_col{
+        width: 31%;
+        margin-top: 40px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        i  {
+
+            font-size: 2.1em;
+            color: #2c3192;
+            line-height: 0;
+        }
+
+        h3 {
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 1.2em;
+            color: #2c3192;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 0.9em;
+            letter-spacing: 0.05em;
+            hyphens: auto;
+            line-height: 1.6;
+            text-align: justify;
+            color: #2c3192;
         }
     }
 }
